@@ -1,9 +1,9 @@
   // <<< ADD CONSTANTS HERE (if you need them)
 
   function setup() {
-  createCanvas(1000,1000)
- // background("skyblue")
-
+  
+  createCanvas(500,300)
+ background("skyblue")
 
   //STÄNGEL
   fill("darkgreen")
