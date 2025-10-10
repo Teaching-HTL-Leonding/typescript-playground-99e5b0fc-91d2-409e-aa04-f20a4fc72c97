@@ -15,5 +15,14 @@ circle(115,55,63.8)
 
 circle(160,90,63.8)
 
-circle(115,140,63.8)
+circle(120,140,63.8)
+
+circle(60,125,63.8)
+
+//KERN
+fill("yellow")
+
+circle(100,90,63.8)
+
+
 }
