@@ -1,8 +1,8 @@
-  // <<< ADD CONSTANTS HERE (if you need them)
+const STROKETHICK=10
+const STROKETHIN=10
 
   function setup() {
-  
-  createCanvas(500,300)
+    createCanvas(500,300)
  background("skyblue")
 
   //STÄNGEL
@@ -16,7 +16,7 @@
 
 
   stroke("lightgreen")
-  strokeWeight(10)
+  strokeWeight(STROKETHICK)
 
   //circle von Blättern
   fill("lightgreen")
