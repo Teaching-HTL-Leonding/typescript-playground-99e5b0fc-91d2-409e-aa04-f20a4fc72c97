@@ -4,9 +4,9 @@
         angleMode(DEGREES);
     }
     let color_hue: number = 0
-
+noFill()
     function mouseMoved() {
-        const gridSize = 20;
+        const gridSize = 40;
 
         background("black");
 
@@ -14,11 +14,14 @@
         noFill();
 
     fill(color_hue,100,100)
-    rect(mouseX,mouseY,200)
+    rect(mouseX,mouseY,width*2/2-mouseX,height*2/2-mouseY)
+
+    stroke("lightgray");
+    strokeWeight(1);
+    line(width/2 - diameterX / 2, height/2, width/2 + diameterX / 2, height/2);
+    line(width/2, height/2 - diameterY / 2, width/2, height/2 + diameterY / 2);
+
 
     //color_hue = (color_hue + 5) %360
-        textAlign(LEFT);
-    const area = Math.round(diameterX / 2 * diameterY / 2 * Math.PI);
-    text(`Area: ${area}`, 5, height - 10);
+  
 }      
-}
