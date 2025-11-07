@@ -12,28 +12,35 @@ function mouseMoved() {
     stroke("white")
     strokeWeight(2);
     noFill();
-
+ 
+    const width1 = (width / 2 - mouseX) * 2
+    const height1 = (height / 2 - mouseY) * 2
 
     noFill()
-   // fill("white")
-    rect(mouseX, mouseY, (width / 2 - mouseX)*2, (height / 2 - mouseY)*2)
-
- 
+    // fill("white")
+    rect(mouseX, mouseY, width1, height1)
 
 
-   stroke("black")
+
+
+    stroke("black")
     fill("white")
     textAlign(LEFT)
-    const area = Math.round (width / 2 - mouseX)*2*(height / 2 - mouseY)*2
+    const area = width1 * height1
     text(`Area: ${area}`, 5, height - 10);
 
-    
+
+    stroke("white")
+    line(mouseX, mouseY, mouseX + width1, mouseY + height1)
+    line(mouseX + width1, mouseY, mouseX, mouseY + height1)
+
+
+
 }
 
-    
-}
 
 
 
 
-      
+
+
