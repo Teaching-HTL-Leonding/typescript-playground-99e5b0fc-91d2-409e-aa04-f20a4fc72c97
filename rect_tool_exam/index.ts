@@ -12,7 +12,7 @@ function mouseMoved() {
     stroke("white")
     strokeWeight(2);
     noFill();
- 
+
     const width1 = (width / 2 - mouseX) * 2
     const height1 = (height / 2 - mouseY) * 2
 
@@ -37,10 +37,3 @@ function mouseMoved() {
 
 
 }
-
-
-
-
-
-
-
