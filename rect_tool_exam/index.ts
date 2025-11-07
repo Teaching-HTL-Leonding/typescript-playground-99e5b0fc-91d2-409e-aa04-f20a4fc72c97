@@ -21,11 +21,13 @@ function mouseMoved() {
  
 
 
-    //color_hue = (color_hue + 5) %360
+   stroke("black")
     fill("white")
     textAlign(LEFT)
-    const area = Math.round (height)*width
+    const area = Math.round (width / 2 - mouseX)*2*(height / 2 - mouseY)*2
     text(`Area: ${area}`, 5, height - 10);
+
+    
 }
 
     
