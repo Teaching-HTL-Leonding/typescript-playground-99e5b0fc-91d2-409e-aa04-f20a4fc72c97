@@ -21,37 +21,37 @@ function setup() {
     circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
   } else if (dice === 3) {
     // Draw three dots (combination of 1 and 2)
-    } else if (dice === 3) {
-  // Kombination aus 1 und 2
-  circle(width / 2, height / 2, dicePointDiameter);     // Mitte
-  circle(width / 4, height / 4, dicePointDiameter);     // oben links
-  circle(3 * width / 4, 3 * height / 4, dicePointDiameter); // unten rechts
+  } else if (dice === 3) {
+    // Kombination aus 1 und 2
+    circle(width / 2, height / 2, dicePointDiameter);     // Mitte
+    circle(width / 4, height / 4, dicePointDiameter);     // oben links
+    circle(3 * width / 4, 3 * height / 4, dicePointDiameter); // unten rechts
 
-} else if (dice === 4) {
-  // Vier Punkte in den Ecken
-  circle(width / 4, height / 4, dicePointDiameter);
-  circle(3 * width / 4, height / 4, dicePointDiameter);
-  circle(width / 4, 3 * height / 4, dicePointDiameter);
-  circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
+  } else if (dice === 4) {
+    // Vier Punkte in den Ecken
+    circle(width / 4, height / 4, dicePointDiameter);
+    circle(3 * width / 4, height / 4, dicePointDiameter);
+    circle(width / 4, 3 * height / 4, dicePointDiameter);
+    circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
 
-} else if (dice === 5) {
-  // Vier Ecken + Mitte
-  circle(width / 4, height / 4, dicePointDiameter);
-  circle(3 * width / 4, height / 4, dicePointDiameter);
-  circle(width / 4, 3 * height / 4, dicePointDiameter);
-  circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
-  circle(width / 2, height / 2, dicePointDiameter);
+  } else if (dice === 5) {
+    // Vier Ecken + Mitte
+    circle(width / 4, height / 4, dicePointDiameter);
+    circle(3 * width / 4, height / 4, dicePointDiameter);
+    circle(width / 4, 3 * height / 4, dicePointDiameter);
+    circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
+    circle(width / 2, height / 2, dicePointDiameter);
 
-} else if (dice === 6) {
-  // Drei Punkte links, drei rechts
-  circle(width / 4, height / 4, dicePointDiameter);
-  circle(width / 4, height / 2, dicePointDiameter);
-  circle(width / 4, 3 * height / 4, dicePointDiameter);
+  } else if (dice === 6) {
+    // Drei Punkte links, drei rechts
+    circle(width / 4, height / 4, dicePointDiameter);
+    circle(width / 4, height / 2, dicePointDiameter);
+    circle(width / 4, 3 * height / 4, dicePointDiameter);
 
-  circle(3 * width / 4, height / 4, dicePointDiameter);
-  circle(3 * width / 4, height / 2, dicePointDiameter);
-  circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
-}
+    circle(3 * width / 4, height / 4, dicePointDiameter);
+    circle(3 * width / 4, height / 2, dicePointDiameter);
+    circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
+  }
 
-  } /* ... add the other cases here */
-}
+} /* ... add the other cases here */
+
