@@ -6,8 +6,8 @@ let size = 50
 let x = 150
 let y = 50
 let countdown = 10
-let dx=2
-let dy=2
+let dx = 2
+let dy = 2
 
 
 
@@ -26,29 +26,34 @@ function draw() {
     line(x + size, y, x, y + size)
     line(x, y + size, x - size, y)
     line(x - size, y, x, y - size)
-    textAlign(CENTER,CENTER)
+    textAlign(CENTER, CENTER)
     textSize(20)
-    text(countdown,x,y)
+    text(countdown, x, y)
 
 
-    if(countdown>0) {
-        x += dx 
+    if (countdown > 0) {
+        x += dx
         y += dy
 
     }
 
-    if(x<=0 || x>=width)  {
-        dx*= -1
+    if (x <= 0 || x >= width) {
+        if (countdown > 0)
+            dx *= -1
         countdown--
 
     }
 
-    if(y<=0|| y>=height) {
-       dy*= -1
-        countdown--
+    if (y <= 0 || y >= height) {
+        dy *= -1
+        if (countdown > 0) {
+
+            countdown--
+        }
+
     }
 
-  //  if countdown=0
+    // if countdown=0
 
 
 }
