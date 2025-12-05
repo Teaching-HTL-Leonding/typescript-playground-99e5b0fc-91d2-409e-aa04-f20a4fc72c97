@@ -43,10 +43,12 @@ function draw() {
 
     }
 
-   // if(y<=0|| y<=height) {
-   //     dy*= -1
-   //     countdown--
-   // }
+    if(y<=0|| y>=height) {
+       dy*= -1
+        countdown--
+    }
+
+  //  if countdown=0
 
 
 }
