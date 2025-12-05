@@ -9,15 +9,6 @@ let countdown = 10
 let dx = 2
 let dy = 2
 
-
-
-
-
-
-
-
-
-
 function draw() {
     background("gold");
     strokeWeight(5)
@@ -53,7 +44,7 @@ function draw() {
 
     }
 
-    // if countdown=0
+    
 
 
 }
