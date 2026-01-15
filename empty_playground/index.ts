@@ -1,15 +1,21 @@
 function setup() {
-     const centerX = [100
-    const centerY = 100
 
-    createCanvas(500,500)
-    background("white")
+createCanvas(500,500)
+stroke("black")
+strokeWeight(2)
+noFill()
+angleMode(DEGREES)
 
 
-    fill("red")
-    y
 }
 
 function draw() {
-  
+    background("white")
+    push()
+    rotate   
+
+}
+
+function mouseClicked()  {
+
 }
