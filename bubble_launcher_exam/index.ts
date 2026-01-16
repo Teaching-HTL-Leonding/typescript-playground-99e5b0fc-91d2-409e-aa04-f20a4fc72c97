@@ -12,7 +12,6 @@ function setup() {
 
 function draw() {
     background("white");
-
     fill('yellow');
     stroke('gold');
 
@@ -30,7 +29,9 @@ function draw() {
         }
 
     }
-
+ fill('lightgray');
+    stroke('darkgray');
+    rect(0, 0, DIAM, height);  
 }
 
 function mouseClicked() {
