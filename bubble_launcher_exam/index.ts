@@ -34,4 +34,7 @@ function draw() {
 }
 
 function mouseClicked() {
+    circleX.push(RADI)
+    circleY.push(random(RADI,height-RADI))
+    direction.push(1)
 }
