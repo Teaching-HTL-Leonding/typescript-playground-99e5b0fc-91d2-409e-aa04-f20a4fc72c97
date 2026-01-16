@@ -13,6 +13,7 @@ function setup() {
 function draw() {
     background("white");
     fill("lightgrey")
+    stroke("darkgrey")
     rect(0, 0, DIAM, height)
    
     fill('yellow');
@@ -21,6 +22,8 @@ function draw() {
     circle(10, mouseY - 10, DIAM)
 
     for (let i = 0; i < circleX.length; i++) {
+       
+       
         circle(circleX[i], circleY[i], DIAM)
 
         circleX[i] += SPEED * direction[i]
@@ -30,6 +33,7 @@ function draw() {
             direction[i] *= -1
             circleX[i] = Math.max(RADI, Math.min(width - RADI, circleX[i]))
 
+            circleX[i] += SPEED * direction[i]
 
         }
 
