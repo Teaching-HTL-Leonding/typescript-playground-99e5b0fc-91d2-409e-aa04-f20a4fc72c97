@@ -17,27 +17,20 @@ function draw() {
     stroke('gold');
 
     for (let i = 0; i < circleX.length; i++) {
-        circle(circleX[i], circleY[i])
-        DIAM)
+        circle(circleX[i], circleY[i], DIAM)
 
         circleX[i]+= SPEED*direction[i]
 
-        if(circle)
+        if(circleX[i]- RADI<0||circleX[i]+ RADI >
+        width) {
+            direction[i]*=-1
+            circleX[i]=Math.max(RADI,Math.min(width - RADI,circleX[i]))
+        
+               
+        }
 
     }
 
-    rect(0, 0, DIAM, height);
-
-    fill('yellow');
-    stroke('gold');
-
-    circle(circleX, circleY, DIAM);
-
-    circleX += SPEED * direction;
-    if (circleX - RADI < 0 || circleX + RADI > width) {
-        direction *= -1;
-        circleX = max(RADI, min(width - RADI, circleX));
-    }
 }
 
 function mouseClicked() {
