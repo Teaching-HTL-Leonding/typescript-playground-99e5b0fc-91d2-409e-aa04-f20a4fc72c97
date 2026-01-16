@@ -12,30 +12,33 @@ function setup() {
 
 function draw() {
     background("white");
+    fill("lightgrey")
+    rect(0, 0, DIAM, height)
+   
     fill('yellow');
     stroke('gold');
+
+    circle(10, mouseY - 10, DIAM)
 
     for (let i = 0; i < circleX.length; i++) {
         circle(circleX[i], circleY[i], DIAM)
 
-        circleX[i]+= SPEED*direction[i]
+        circleX[i] += SPEED * direction[i]
 
-        if(circleX[i]- RADI<0||circleX[i]+ RADI >
-        width) {
-            direction[i]*=-1
-            circleX[i]=Math.max(RADI,Math.min(width - RADI,circleX[i]))
-        
-               
+        if (circleX[i] - RADI < 0 || circleX[i] + RADI >
+            width) {
+            direction[i] *= -1
+            circleX[i] = Math.max(RADI, Math.min(width - RADI, circleX[i]))
+
+
         }
 
     }
- fill('lightgray');
-    stroke('darkgray');
-    rect(0, 0, DIAM, height);  
+    
 }
 
 function mouseClicked() {
-    circleX.push(RADI)
-    circleY.push(random(RADI,height-RADI))
+    circleX.push(0)
+    circleY.push(mouseY)
     direction.push(1)
 }
