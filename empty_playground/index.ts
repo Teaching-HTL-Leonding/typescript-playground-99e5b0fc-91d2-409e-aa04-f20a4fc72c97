@@ -5,10 +5,10 @@ function setup() {
     stroke("yellow")
     strokeWeight(3)
     fill("darkblue")
-
+for(let i = 0; i< 3; i++){
     drawCircle()
-    translate(200,0)
-    drawCircle()
+    translate(100,0)
+   
 }
 
 function drawCircle() {
