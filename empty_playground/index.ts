@@ -1,32 +1,18 @@
-let rotation: number[] = []
-let centerX: number[] = []
-let centerY: number[] = []
- 
 function setup() {
-    createCanvas(1000, 1000)
-    stroke("black")
-    strokeWeight(2)
-    noFill()
-    angleMode(DEGREES)
+    createCanvas(500,500)
+    background("black")
+
+    stroke("yellow")
+    strokeWeight(3)
+    fill("darkblue")
+
+    drawCircle()
+    translate(200,0)
+    drawCircle()
 }
- 
- 
-function draw() {
-    background("red")
- 
-    for (let i = 0; i < centerX.length; i++) {
-        push()
-        translate(centerX[i], centerY[i])
-        rotate(rotation[i])
-        line(-50, 0, 50, 0)
-        pop()
-        rotation[i] += 5
-    }
- 
-}
- 
-function mouseClicked() {
-    centerX.push (mouseX)
-    centerY.push (mouseY)
-    rotation.push(0)
+
+function drawCircle() {
+    circle(150, 150, 100)
+    line(150,100,150,200)
+    line(100,150,200,150)
 }
