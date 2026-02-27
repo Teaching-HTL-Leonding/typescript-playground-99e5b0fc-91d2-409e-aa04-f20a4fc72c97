@@ -1,18 +1,20 @@
+let nextFlower = true;
+ 
 function setup() {
-    createCanvas(500,500)
-    background("black")
-
-    stroke("yellow")
-    strokeWeight(3)
-    fill("darkblue")
-for(let i = 0; i< 3; i++){
-    drawCircle()
-    translate(100,0)
-   
+  createCanvas(500, 500);
+  angleMode(DEGREES);
+  flower(nextFlower);
 }
-
-function drawCircle() {
-    circle(150, 150, 100)
-    line(150,100,150,200)
-    line(100,150,200,150)
+ 
+function mouseClicked() {
+  nextFlower = !nextFlower;
+  flower(nextFlower);
 }
+ 
+function flower(style: boolean) {
+  push();
+  translate(random(0, width), random(0, height));
+  scale(0.5);
+ 
+  stroke("black");
+  strokeWeight(4)
