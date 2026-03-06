@@ -64,15 +64,14 @@ function setup(): void {
     createCanvas(canvasW, canvasH);
 
     randomNumber = Math.floor(Math.random() * (TOTAL + 1));
-
     background("white");
 
    // Title
     noStroke();
     fill("black");
-    textSize(14);
+    textSize(30);
     textAlign(CENTER);
-    text(`Random number: ${randomNumber} / 500`, width / 2, 20);
+    text(`Random number: ${randomNumber} / 500`, width / 2, 40);
 
    
 }
