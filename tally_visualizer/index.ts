@@ -20,18 +20,26 @@ const COLOR_FILLED = "steelblue";
 // The random number to visualize (0–500)
 let randomNumber: number;
 
+
+
+
 // <<< Add your functions here
 /**
- * Returns true if the circle at (row, col) should be colored.
+ * Returns true if the tally at (row, col) should be colored.
  *
  * @param row  - zero-based row index (0 … ROWS-1)
  * @param col  - zero-based column index (0 … COLS-1)
- * @param n    - how many circles (out of 100) should be filled
+ * @param n    - how many tally (out of 100) should be filled
  */
 function isColored(row: number, col: number, n: number): boolean {
     return row * GROUP_W + col < n
 }
-
+/**
+ * Draws a single tally centered at the current origin (0, 0).
+ * Uses push/pop so fill/stroke changes don't leak out.
+ *
+ * @param colored - whether the tally should be highlighted
+ */
 function drawTally(colored: boolean): void{
     push()
     stroke("black ")
@@ -39,6 +47,12 @@ function drawTally(colored: boolean): void{
     fill(colored? CELL_W : CELL_H)
     tally(0, 0, GROUPS_PER_ROW - 10)
     pop()
+
+    line(0,0,0 ,GROUP_H)
+    line(10,0,10, GROUP_H)
+    line(20,0,20, GROUP_H)
+    line(30,0,30, GROUP_H )
+    line(0,26,35, 8)
 
 }
 
@@ -56,7 +70,7 @@ function setup(): void {
     fill("black");
     textSize(14);
     textAlign(CENTER);
-    text(`Random number: ${randomNumber} / 500`, width / 2, 20);
+    text(`Random number: ${randomNumber} / 5`, width / 2, 20);
 
    
 }
