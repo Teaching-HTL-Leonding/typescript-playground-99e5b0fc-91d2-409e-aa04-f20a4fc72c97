@@ -18,9 +18,14 @@ const CELL_H = GROUP_H + ROW_GAP;
 const COLOR_FILLED = "steelblue";
 
 // The random number to visualize (0–500)
-let randomNumber: number//(0-5)
+let randomNumber: number;
 
 // <<< Add your functions here
+
+function drawTallyGroup(count: number ) {
+for(let i = 0; i < Math.min(count, 4 ))
+}
+
 
 function setup(): void {
     const canvasW = GROUPS_PER_ROW * CELL_W + 2 * MARGIN;
@@ -33,3 +38,5 @@ function setup(): void {
 
     // <<< Add your logic here
 }
+
+
