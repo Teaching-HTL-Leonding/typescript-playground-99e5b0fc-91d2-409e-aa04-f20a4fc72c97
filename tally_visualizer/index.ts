@@ -18,7 +18,7 @@ const CELL_H = GROUP_H + ROW_GAP;
 const COLOR_FILLED = "steelblue";
 
 // The random number to visualize (0–500)
-let randomNumber: number;
+let randomNumber: number//(0-5)
 
 // <<< Add your functions here
 
