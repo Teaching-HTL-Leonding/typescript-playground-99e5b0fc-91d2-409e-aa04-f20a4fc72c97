@@ -21,11 +21,26 @@ const COLOR_FILLED = "steelblue";
 let randomNumber: number;
 
 // <<< Add your functions here
-
-function drawTallyGroup(count: number ) {
-for(let i = 0; i < Math.min(count, 4 ))
+/**
+ * Returns true if the circle at (row, col) should be colored.
+ *
+ * @param row  - zero-based row index (0 … ROWS-1)
+ * @param col  - zero-based column index (0 … COLS-1)
+ * @param n    - how many circles (out of 100) should be filled
+ */
+function isColored(row: number, col: number, n: number): boolean {
+    return row * GROUP_W + col < n
 }
 
+function drawTally(colored: boolean): void{
+    push()
+    stroke("black ")
+    strokeWeight(2)
+    fill(colored? CELL_W : CELL_H)
+    tally(0, 0, GROUPS_PER_ROW - 10)
+    pop()
+
+}
 
 function setup(): void {
     const canvasW = GROUPS_PER_ROW * CELL_W + 2 * MARGIN;
@@ -36,7 +51,17 @@ function setup(): void {
 
     background("white");
 
-    // <<< Add your logic here
+   // Title
+    noStroke();
+    fill("black");
+    textSize(14);
+    textAlign(CENTER);
+    text(`Random number: ${randomNumber} / 500`, width / 2, 20);
+
+   
 }
 
 
+function tally(arg0: number,arg1: number,arg2: number) {
+throw new Error("Function not implemented.");
+}
