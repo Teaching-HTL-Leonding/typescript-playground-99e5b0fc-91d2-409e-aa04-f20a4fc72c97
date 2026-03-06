@@ -56,6 +56,8 @@ function drawTally(colored: boolean): void{
 
 }
 
+
+
 function setup(): void {
     const canvasW = GROUPS_PER_ROW * CELL_W + 2 * MARGIN;
     const canvasH = ROWS * CELL_H + TITLE_HEIGHT + MARGIN;
@@ -70,7 +72,7 @@ function setup(): void {
     fill("black");
     textSize(14);
     textAlign(CENTER);
-    text(`Random number: ${randomNumber} / 5`, width / 2, 20);
+    text(`Random number: ${randomNumber} / 500`, width / 2, 20);
 
    
 }
