@@ -37,12 +37,45 @@ function setup() {
     }
 
     for(let  row= 0 row < 5 ;row++){
-        for(let col= 0 col<5)
+        for(let col= 0 col<5){
+            drawhexagon()
+            translate(45,0)
+
+            translate(-45+5,0)
+
+            if(row % 2 === 0) {
+                translate(22.5,25)
+                }
+                else{
         
+                }
+
+
+        }
+
     }
 
 
+function drawHoneycomps() {
+for(let col = 0, row <5 row++){
+    
+    for(let col = 0 col < 5 col++){
+        drawHexagon()
+        translate(45,0)
+    }
+    translate(-45+ 5. 0)
+    if(row % 2 === 0){
+        translate(22.5,25)
+        else{
+        translate(-22.5,25)    
+        }
+    }
 
+}
+
+
+
+}
     // Draw a single hexagon using six line() calls.
     //
     // Vertex layout (pixel coordinates, origin = top-left of bounding box):
